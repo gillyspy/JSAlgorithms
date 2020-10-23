@@ -48,3 +48,8 @@ test('circular detects non-circular linked lists', () => {
 
   expect(circular(l)).toEqual(false);
 });
+
+test('circular detects zero size linked lists', ()=>{
+  const l = new List();
+  expect(circular(l)).toEqual(false)
+})

@@ -11,6 +11,19 @@
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
 
-function fromLast(list, n) {}
+function fromLast(list, n) {
+    let [tortoise, hare] = [list.getFirst(), list.getFirst()]
+
+    //init hare to be ahead n spaces
+    while(n-- && hare && hare.next){
+        hare = hare.next
+    }
+
+    while( hare && hare.next){
+        hare = hare.next
+        tortoise = tortoise.next
+    }
+    return tortoise
+}
 
 module.exports = fromLast;
