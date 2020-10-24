@@ -14,6 +14,7 @@ test('levelWidth returns number of nodes at widest point', () => {
   root.children[2].add(5);
 
   expect(levelWidth(root)).toEqual([1, 3, 2]);
+
 });
 
 test('levelWidth returns number of nodes at widest point', () => {
