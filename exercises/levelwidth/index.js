@@ -29,7 +29,7 @@ let levelWidth = {
 
         }
         return widths
-    },
+    },//
     withArrays  : function (root) {//alternate solution without a stopper
         let widths = [0]
         let queue = []
